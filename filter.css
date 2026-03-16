@@ -25,10 +25,18 @@
 .filter_gray_medium { filter: grayscale(50%) !important; }
 .filter_gray_dark { filter: grayscale(75%) !important; }
 .filter_gray_full { filter: grayscale(100%) !important; }
-
+.filter_black {
+    filter: grayscale(1) brightness(0) contrast(1) !important;
+}
 /* ===========================================
    FILTROS DE SEPIA
    =========================================== */
+.filtro_olivo {
+    filter: invert(60%) sepia(7%) saturate(493%) hue-rotate(28deg) brightness(85%) contrast(87%);
+}
+.filtro_golden {
+    filter: invert(65%) sepia(85%) saturate(1200%) hue-rotate(7deg) brightness(70%) contrast(110%);
+}
 
 /* Sepias básicos en incrementos de 10% */
 .filter_sepia_0 { filter: sepia(0%) !important; }
@@ -257,6 +265,14 @@
     filter: hue-rotate(180deg) saturate(60%) brightness(110%) !important; 
 }
 
+
+.filter_white {
+    filter: grayscale(1) brightness(0) invert(1) !important;
+}
+.filter_black {
+    filter: grayscale(1) brightness(0) contrast(1) !important;
+}
+
 /* ===========================================
    FILTROS CON TRANSICIONES
    =========================================== */
@@ -343,16 +359,8 @@
     filter: invert(50%) !important; 
 }
 
-.filter_white {
-    filter: grayscale(1) brightness(0) invert(1) !important;
-}
-.filter_black {
-    filter: grayscale(1) brightness(0) contrast(1) !important;
-}
-.filter_golden {
-    filter: sepia(95%) saturate(120%) hue-rotate(18deg) brightness(0.88) contrast(1.05) !important;
-    -webkit-filter: sepia(95%) saturate(120%) hue-rotate(18deg) brightness(0.88) contrast(1.05) !important;
-}
+
+
 /* Filtro de opacidad */
 .filter_opacity_10 { 
     filter: opacity(10%) !important; 
@@ -421,3 +429,6 @@ html<!-- Foto vintage -->
 html<img src="imagen.jpg" class="filter_mobile_soft filter_desktop_intense">
 
 */
+.filter_rosa {
+    filter: hue-rotate(313deg) saturate(3) brightness(1.1) contrast(1.1) !important;
+}
